@@ -1,6 +1,8 @@
 # 動画プラットフォーム
 
 YouTube ライクな動画プラットフォーム MVP
+<img width="925" height="704" alt="image" src="https://github.com/user-attachments/assets/56df1654-f2c9-4eaa-9212-f40c417c9096" />
+
 
 ## 技術スタック
 
