@@ -1,0 +1,111 @@
+.card {
+  display: block;
+  text-decoration: none;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-fast);
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card:hover .thumbnail img {
+  transform: scale(1.05);
+}
+
+.thumbnail {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-tertiary);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.thumbnailPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+  color: var(--text-tertiary);
+  font-size: 2rem;
+}
+
+.duration {
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-sm);
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: white;
+}
+
+.info {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-md) 0;
+}
+
+.channelAvatar {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.channelAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: var(--space-xs);
+}
+
+.channel {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.channel:hover {
+  color: var(--text-primary);
+}
+
+.stats {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}

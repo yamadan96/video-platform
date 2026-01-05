@@ -1,0 +1,218 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xl);
+}
+
+.authPrompt {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+}
+
+.authPrompt h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.authPrompt p {
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-lg);
+}
+
+/* Dropzone */
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2xl);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--bg-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.dropzone:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.dropzoneIcon {
+  color: var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.dropzone h3 {
+  margin-bottom: var(--space-xs);
+}
+
+.dropzone p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.dropzoneHint {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+}
+
+/* Upload Form */
+.uploadForm {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.previewThumb {
+  width: 80px;
+  height: 45px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+}
+
+.previewInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fileName {
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.fileSize {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+}
+
+.removeBtn {
+  padding: var(--space-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.removeBtn:hover {
+  background: var(--bg-hover);
+  color: var(--error);
+}
+
+/* Progress */
+.progressSection {
+  margin-bottom: var(--space-lg);
+}
+
+.progressBar {
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--space-sm);
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #ff6b9d);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+.progressStatus {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--success);
+}
+
+.errorText {
+  color: var(--error);
+}
+
+/* Form */
+.formGroup {
+  margin-bottom: var(--space-md);
+}
+
+.formGroup label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  resize: vertical;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.error {
+  color: var(--error);
+  font-size: 0.875rem;
+  margin-bottom: var(--space-md);
+}
+
+.uploadBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: linear-gradient(135deg, var(--accent), #ff6b9d);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.uploadBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 0, 80, 0.4);
+}
+
+.uploadBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
